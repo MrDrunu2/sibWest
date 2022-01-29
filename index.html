@@ -16,180 +16,59 @@
     <script src="./extensions/jquery/jq.js"></script>
 </head>
 <body class="h-100">
-    <!-- шапка навигации -->
-    <nav class="navbar navbar-expand-lg navbar-white bg-dark sticky-top p-0">
-        <div class="container-fluid">
-            <!-- Логотип и название -->
-            <a href="#" class="navbar-brand"><b>SIB</b></a>  
-            <!-- ----- -->
-            <!-- кнопка меню на мобильных экранах -->
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- ----- -->
-            <!-- Ссылки навигации -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page">Link</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link" aria-current="page">Link</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link" aria-current="page">Link</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link" aria-current="page">Link</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link" aria-current="page">Link</a>
-                    </li>
-                </ul>
-                <!-- Переключатель для правого меню -->
-                <div class="nav-item">
-                    <button class="btn btn-primary p-1 m-1 d-none d-lg-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Александров Александр</button>
-                    <button class="btn btn-primary p-1 m-1 d-block d-lg-none w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Александров Александр</button>
-                </div>
-                <!-- ----------- -->
-            </div>
-            <!-- ---- -->
-        </div>
-    </nav> 
-    <!-- Пользователь правое окно -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvasRightLabel">Александров александр</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Все расходы: 3000p</li>
-                    <li class="list-group-item"><a href="#" class="link-primary">Ваши задачи</a></li>
-                    <li class="list-group-item">Ваш рейтинг: 23</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- --------- -->
 
-    <!-- контент -->
-    <div class="container-xl my-3">
+    <div class="container-fluid mt-3">
         <div class="row">
-            <!-- Карточки рекламы -->
-            <div class="col-3 d-none d-lg-block">
-                <div class="card">
-                    <h5 class="card-header text-center">Реклама</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Adds</h5>
-                        <img src="36" alt="" class="card-img-top">
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae sequi ea?</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <h5 class="card-header text-center">Реклама</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Adds</h5>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae sequi ea?</p>
-                    </div>
-                </div>
+            <!-- Информация о сайте (Сделать адаптацию) -->
+            <div class="col col-8">
+                asdfsdf
             </div>
-            <!-- ------------ -->
-            <!-- Контент -->
+            <!-- ------------- -->
+            <!-- Карточка входа в систему -->
             <div class="col">
-                <div class="card" style="height: 85vh;">
-                    <h5 class="card-header py-2 text-center">
-                        Ваши предложения
-                    </h5>
-                    <!-- Карточки -->
-                    <div class="card-body overflow-auto">
-                        <div class="row">
-                            <div class="col">
-                                <!-- Кнопка для маленьких экранов -->
-                                <button class="btn btn-success px-3 w-100 d-md-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>+</b></button>
-                                <hr class="d-md-none">
-                                <!-- ----------------------------- -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="row">
-                                            <div class="col text-y-center">
-                                                <h6 class="h6">Заявка от 27.12.2000</h6>
-                                            </div>
-                                            <div class="col text-end">
-                                                <!-- Описать логику для закрытия открытия заявки -->
-                                                <button class="btn btn-success">Открыть</button>
-                                                <button class="btn btn-danger">Закрыть</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam, repellat ut doloremque libero temporibus, sapiente vero dolore explicabo nulla, saepe ullam quibusdam voluptate alias delectus voluptatem quis exercitationem soluta.</p>
-                                        <div class="input-group mb-3 user-select-none">
-                                            <span class="input-group-text" id="basic-addon1">Оплата:</span>
-                                            <input type="text" class="form-control" placeholder="250"disabled>
-                                            <span class="input-group-text">руб.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- кнопка добавить задачу для экранов от планшета -->
-                            <div class="col-1 col px-1 d-md-block d-none">
-                                <div class="row my-2">
-                                    <div class="col"></div>
-                                    <div class="col text-center"><button class="btn btn-success px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>+</b></button></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -------- -->
-                </div>
-            </div>
-            <!-- ------ -->
-            <!-- Люди -->
-            <!-- <div class="col-3 d-none d-lg-block">
                 <div class="card">
-                    <h5 class="card-header text-center">Лучшие из лучших</h5>
+                    <h6 class="card-header text-center">Вход в аккаунт</h6>
                     <div class="card-body">
-                        <h5 class="card-title">NAME</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <form action="/">
+                            <div class="input-group mb-3 mt-2">
+                                <span class="input-group-text">Логин</span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text">Пароль</span>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="container-fluid mt-4">
+                                <div class="row">
+                                    <div class="col"><button class="btn btn-success w-100 p-1">Вход</button></div>
+                                    <div class="col"><button class="btn btn-primary w-100 p-1">Регистрация</button></div>
+                                </div>  
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div> -->
-            <!-- ----- -->
-        </div>
-    </div>
-
-    <!-- Модальное окно добавления заявки -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Hello</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- Карточка регистрации -->
+                <div class="card mt-4">
+                    <h6 class="card-header text-center">Регистрация</h6>
+                    <div class="card-body">
+                        <form action="/">
+                            <div class="input-group">
+                                <span class="input-group-text">Логин</span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group mt-2">
+                                <span class="input-group-text">Пароль</span>
+                                <input type="password" class="form-control">
+                            </div>
+                            <button class="btn btn-success mt-2 w-100 p-1">Зарегестрироваться</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form action="/">
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text input-group-sm" id="inputGroup-sizing-sm">Описание</span>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text input-group-sm" id="inputGroup-sizing-sm">Цена за час</span>
-                            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text input-group-sm" id="inputGroup-sizing-sm">Время работы</span>
-                            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                        <button class="btn btn-success" type="submit">Создать заявку</button>
-                    </form>
-                </div>
+                <!-- ---------------- -->
             </div>
+            <!-- ----------------- -->
         </div>
     </div>
-    <!-- -------------------------------- -->
 
     <script src="./js/main.js"></script>
 </body>

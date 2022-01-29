@@ -2,6 +2,10 @@ body {
   background: #111;
 }
 
-.after-flow {
-  overflow: hidden;
+.user-profile {
+  color: white;
+}
+
+.log-in-body {
+  background-image: url("../img/bg.jpg");
 }/*# sourceMappingURL=index.css.map */
