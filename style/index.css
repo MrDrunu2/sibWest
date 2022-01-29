@@ -8,4 +8,5 @@ body {
 
 .log-in-body {
   background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=index.css.map */

@@ -75,7 +75,7 @@
     <!-- --------- -->
 
     <!-- контент -->
-    <div class="container-xl my-3">
+    <div class="container-fluid my-3">
         <div class="row">
             <!-- Карточки рекламы -->
             <div class="col-3 d-none d-lg-block">
@@ -171,16 +171,16 @@
                 <div class="modal-body">
                     <form action="/">
                         <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text input-group-sm" id="inputGroup-sizing-sm">Описание</span>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <span class="input-group-text input-group-sm d-none d-md-block" id="inputGroup-sizing-sm">Описание</span>
+                            <textarea class="form-control" placeholder="Описание работ" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text input-group-sm" id="inputGroup-sizing-sm">Цена за час</span>
-                            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            <span class="input-group-text input-group-sm d-none d-md-block" id="inputGroup-sizing-sm">Цена за час</span>
+                            <input type="number" placeholder="Цена за час" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                         </div>
                         <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text input-group-sm" id="inputGroup-sizing-sm">Время работы</span>
-                            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            <span class="input-group-text input-group-sm d-none d-md-block" id="inputGroup-sizing-sm">Время работы</span>
+                            <input type="number" placeholder="Примерное время работы" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                         </div>
                         <button class="btn btn-success" type="submit">Создать заявку</button>
                     </form>
